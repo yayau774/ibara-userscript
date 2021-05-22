@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         Ibaracity - 戦闘設定に装備を表示するボタンをつけるやつ
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  やつ。
-// @author       Yayau
-// @match        http://lisge.com/ib/act_battle.php
-// @updateURL    http://yayau.s500.xrea.com/ibr-sight/ShowEquipment.user.js
-// @downloadURL  http://yayau.s500.xrea.com/ibr-sight/ShowEquipment.user.js
-// @grant        none
+// @name          Ibaracity - 戦闘設定に装備を表示するボタンをつけるやつ
+// @namespace     http://tampermonkey.net/
+// @version       0.2
+// @description   やつ。
+// @author        Yayau
+// @match         http://lisge.com/ib/act_battle.php
+// @updateURL     https://github.com/yayau774/ibara-userscript/raw/main/ShowEquipment.user.js
+// @downloadURL  	https://github.com/yayau774/ibara-userscript/raw/main/ShowEquipment.user.js
+// @grant         none
 // ==/UserScript==
 
 
