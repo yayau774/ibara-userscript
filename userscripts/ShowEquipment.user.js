@@ -5,8 +5,8 @@
 // @description   やつ。
 // @author        Yayau
 // @match         http://lisge.com/ib/act_battle.php
-// @updateURL     https://yayau774.github.io/ibara-userscript/ShowEquipment.user.js
-// @downloadURL  	https://yayau774.github.io/ibara-userscript/ShowEquipment.user.js
+// @updateURL     https://yayau774.github.io/ibara-userscript/userscripts/ShowEquipment.user.js
+// @downloadURL   https://yayau774.github.io/ibara-userscript/userscripts/ShowEquipment.user.js
 // @grant         none
 // ==/UserScript==
 
