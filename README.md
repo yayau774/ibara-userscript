@@ -4,7 +4,7 @@
 
 ## [ShowEquipment.user.js](https://yayau774.github.io/ibara-userscript/userscripts/ShowEquipment.user.js)
 戦闘設定画面で自分の装備を見るやつ。  
-v0.3.0 / 試行錯誤。
+v0.3.1 / requireキャッシュ対策。
 
 ## []
 

@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name          Ibaracity - 戦闘設定に装備を表示するボタンをつけるやつ
 // @namespace     https://github.com/yayau774/ibara-userscript
-// @version       0.3.0
+// @version       0.3.1
 // @description   やつ。
 // @author        Yayau
 // @match         http://lisge.com/ib/act_battle.php
 // @updateURL     https://yayau774.github.io/ibara-userscript/userscripts/ShowEquipment.user.js
-// @require       https://yayau774.github.io/ibara-userscript/userscripts/define.js?v00
+// @require       https://yayau774.github.io/ibara-userscript/userscripts/define.js?v01
 // @grant         none
 // ==/UserScript==
 

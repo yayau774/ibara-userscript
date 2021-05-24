@@ -18,7 +18,7 @@ const CATEGORY = {
   jewel : {
     type  : ["装飾", "魔晶", "護符", "御守", "薬箱", "楽器", "光飾", "闇飾", "魔鏡"],
     order : 3,
-    color : "red"
+    color : "yellowgreen"
   },
   food  : {
     type  : [],
