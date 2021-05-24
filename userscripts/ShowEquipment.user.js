@@ -6,7 +6,7 @@
 // @author        Yayau
 // @match         http://lisge.com/ib/act_battle.php
 // @updateURL     https://yayau774.github.io/ibara-userscript/userscripts/ShowEquipment.user.js
-// @require       https://yayau774.github.io/ibara-userscript/userscripts/define.js
+// @require       https://yayau774.github.io/ibara-userscript/userscripts/define.js?v00
 // @grant         none
 // ==/UserScript==
 
