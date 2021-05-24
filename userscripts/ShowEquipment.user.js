@@ -1,28 +1,14 @@
 // ==UserScript==
 // @name          Ibaracity - 戦闘設定に装備を表示するボタンをつけるやつ
 // @namespace     https://github.com/yayau774/ibara-userscript
-// @version       0.2.1
+// @version       0.3.0
 // @description   やつ。
 // @author        Yayau
 // @match         http://lisge.com/ib/act_battle.php
 // @updateURL     https://yayau774.github.io/ibara-userscript/userscripts/ShowEquipment.user.js
-// @downloadURL   https://yayau774.github.io/ibara-userscript/userscripts/ShowEquipment.user.js
+// @require       https://yayau774.github.io/ibara-userscript/userscripts/define.js
 // @grant         none
 // ==/UserScript==
-
-
-//  装備分類とか色設定（ゆふ氏にそろえる）とか
-const CATEGORY = {
-  title  : ["種類"],
-  weapon : ["武器", "大砲", "呪器", "魔弾", "戦盾", "暗器", "宝珠", "肉球", "神器", "毒牙"],
-  armor  : ["防具", "法衣", "重鎧", "衣装", "隔壁", "聖衣", "火衣", "水衣", "風衣", "地衣", "魔衣"],
-  jewel  : ["装飾", "魔晶", "護符", "御守", "薬箱", "楽器", "光飾", "闇飾", "魔鏡"]
-};
-const CATEGORY_COLOR = {
-  weapon : "deeppink",
-  armor  : "cyan",
-  jewel  : "yellowgreen"
-}
 
 //  自己結果url
 const urlSelf = document.querySelector("a.F2").href;
@@ -57,9 +43,10 @@ document.querySelectorAll("table.BLK dl").forEach(v=>{
 function createEquipmentTable(result){
 
   //  かてごり確認　武器とか防具とかの大種別
+  //  引数は"呪器"とかの種類名、返り値は"weapon"とかのCATEGORYのキー
   function checkCategory(cate){
     for (const key in CATEGORY) {
-      if(CATEGORY[key].includes(cate)){
+      if(CATEGORY[key].type.includes(cate)){
         return key;
       }
     }
@@ -81,8 +68,8 @@ function createEquipmentTable(result){
   itemTr.forEach(function(v){
     const cate = checkCategory(v.querySelector("td:nth-of-type(3)").textContent);
     if(cate){
-      v.style.color = CATEGORY_COLOR[cate];
-      equipmentItems[cate].push(v.cloneNode(true));
+      v.style.color = CATEGORY[cate].color;
+      equipmentItems[cate]?.push(v.cloneNode(true));
     }
   });
 
